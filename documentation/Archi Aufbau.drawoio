@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0" version="24.7.7">
+  <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
+    <mxGraphModel dx="5542" dy="1660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zVu1UYPfDAuxsihSYN55-3" value="Docker Containername: ioprocessing-iot-iounitdata" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="245" width="960" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="275" width="960" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-30" value="Ist eine Docker Image" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-870" y="190" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-31" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px; text-wrap: nowrap;&quot;&gt;Docker Containername: postgres-iot-iounitdata&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-870" y="230" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-32" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-870" y="260" width="370" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-33" value="DB hat Tabellen" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-770" y="450" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-38" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-580" y="477" as="sourcePoint" />
+            <mxPoint x="-300" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVu1UYPfDAuxsihSYN55-41" value="postgre SQL connection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="445" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-4" value="" style="endArrow=none;html=1;rounded=0;exitX=1.008;exitY=0.568;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="k__iOo3j3QSJ--vpLf49-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-840" y="490" as="sourcePoint" />
+            <mxPoint x="-770" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-7" value="Ist eine Docker Image" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1510" y="190" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-8" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px; text-wrap: nowrap;&quot;&gt;Docker Containername: webapi-iot-iounitdata&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1510" y="230" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-1510" y="260" width="370" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-14" value="www" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1990" y="300" width="350" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-15" value="postgre SQL connection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-1060" y="427" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-16" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" parent="1" vertex="1">
+          <mxGeometry x="-2350" y="260" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-17" value="Mobile device, etc mit und ohne Business Logik" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-2350" y="372.5" width="125" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-18" value="" style="endArrow=none;html=1;rounded=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="k__iOo3j3QSJ--vpLf49-16" target="k__iOo3j3QSJ--vpLf49-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-2175" y="355" as="sourcePoint" />
+            <mxPoint x="-2125" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-19" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1650" y="437.5" as="sourcePoint" />
+            <mxPoint x="-1520" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-20" value="RestAPI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-1640" y="390" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k__iOo3j3QSJ--vpLf49-21" value="RestAPI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=15;" parent="1" vertex="1">
+          <mxGeometry x="-2160" y="330" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-17" value="Ist ein Docker Image" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="205" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-18" value="&lt;span style=&quot;font-family: Verdana; font-size: 10px; text-wrap: nowrap;&quot;&gt;/sensor_processing/iounit_processing.py&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="2620" width="960" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-19" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="2650" width="960" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-23" value="&lt;span style=&quot;font-family: Verdana; font-size: 10px; text-wrap: nowrap;&quot;&gt;/sensor_processing/start.sh&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="330" width="750" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-24" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="360" width="750" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-25" value="Ist ein Shellskript" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="290" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-26" value="&lt;span style=&quot;font-family: Verdana; font-size: 10px; text-wrap: nowrap;&quot;&gt;/sensor_processing/iounit_processing.py&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="426" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-27" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="456" width="590" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-28" value="Ist ein Python-skript" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="386" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-29" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="516" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-30" value="Sind alles einzelne Multithreads" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="476" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-31" value="KPI Temperatur" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="568" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-32" value="KPI Feuchtigkeit" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="568" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-33" value="KPI Temperatur" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-34" value="KPI Feuchtigkeit" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-35" value="Thread für: Der einzelne DHT22 A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="526" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wy33SiuZhUkB2UTDBGOb-36" value="Thread für: Der einzelne DHT22 B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="641" width="280" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

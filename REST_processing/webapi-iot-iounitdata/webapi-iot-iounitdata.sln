@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi-iot-iounitdata", "webapi-iot-iounitdata\webapi-iot-iounitdata.csproj", "{497200B3-C34F-4424-A022-D34CA4CDC9D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Debug|ARM64.ActiveCfg = Release|ARM64
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Debug|ARM64.Build.0 = Release|ARM64
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Release|Any CPU.ActiveCfg = Release|ARM64
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Release|Any CPU.Build.0 = Release|ARM64
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Release|ARM64.ActiveCfg = Release|ARM64
+		{497200B3-C34F-4424-A022-D34CA4CDC9D0}.Release|ARM64.Build.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B4E3C6F-E867-4718-8D38-AA0F3BDC9CF5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿{
+   "ConnectionString": null,
+   "ConnectionStringName": "dab-connection-string",
+   "Dacpac": null,
+   "DatabaseType": 5,
+   "ProjectPath": "C:\\Users\\t0xus\\source\\repos\\webapi-iot-growdata5\\webapi-iot-growdata5",
+   "Tables": [
+      {
+         "Name": "public.iounit_data_chronology",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.iounit_data_currently",
+         "ObjectType": 0
+      }
+   ]
+}
