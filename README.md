@@ -12,9 +12,10 @@ The source code in this repository is provided for viewing purposes only. The co
 
 Please respect these restrictions until the copyright and licensing terms are clearly defined and published. Thank you for your understanding.
 
+Great thanks @CreedsCode / @https://github.com/CreedsCode who has inspired an empowered me!
+
 Great thanks @adafruit_dht for demonstrating how a DHT22 Sensor works in Python with a Raspberry Pi.
 
-Great thanks @derCEO who has inspired an empowered me.
 
 ## Summary
 
