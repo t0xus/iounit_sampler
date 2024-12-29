@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fGHY2OyekMU3Bs6r23mqdIYqxVUGRek3sZxy8aBx25I=",
+  "Source": "webapi-iot-iounitdata",
+  "BasePath": "_content/webapi-iot-iounitdata",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

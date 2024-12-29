@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webapi-iot-iounitdata.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\webapi-iot-iounitdata.props" />
+</Project>

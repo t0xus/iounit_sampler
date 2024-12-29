@@ -25,7 +25,7 @@ public partial class ApplicationDbContext : DbContext
 
             entity.Property(e => e.id).HasDefaultValueSql("nextval('sensor_data_chronology_id_seq'::regclass)");
             entity.Property(e => e.datetime).HasColumnType("timestamp without time zone");
-            entity.Property(e => e.value_alphanumeric).HasMaxLength(25);
+            entity.Property(e => e.value_alphanumerical).HasMaxLength(25);
         });
 
         modelBuilder.Entity<iounit_data_currently>(entity =>
