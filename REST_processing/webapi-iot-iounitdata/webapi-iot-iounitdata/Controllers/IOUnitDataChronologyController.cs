@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using webapi_iot_growdata5.Models;
 
@@ -16,6 +17,7 @@ namespace webapi_iot_growdata5.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<iounit_data_chronology>>> GetAllData()
         {
             return await _context.iounit_data_chronology.ToListAsync();

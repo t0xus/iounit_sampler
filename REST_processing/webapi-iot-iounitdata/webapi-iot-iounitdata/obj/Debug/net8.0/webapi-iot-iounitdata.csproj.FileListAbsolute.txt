@@ -105,3 +105,11 @@ C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata
 C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\obj\Debug\net8.0\webapi-iot-iounitdata.pdb
 C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\obj\Debug\net8.0\webapi-iot-iounitdata.genruntimeconfig.cache
 C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\obj\Debug\net8.0\ref\webapi-iot-iounitdata.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\t0xus\source\repos\iounit_sampler\REST_processing\webapi-iot-iounitdata\webapi-iot-iounitdata\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
