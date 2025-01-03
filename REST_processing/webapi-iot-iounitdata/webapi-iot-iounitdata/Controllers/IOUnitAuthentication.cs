@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using webapi_iot_growdata5.Models;
 
@@ -12,10 +14,12 @@ namespace webapi_iot_growdata5.Controllers
     public class IOUnitAuthentication : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private ApplicationDbContext _dbContext;
 
-        public IOUnitAuthentication(IConfiguration configuration)
+        public IOUnitAuthentication(IConfiguration configuration, ApplicationDbContext dbContext)
         {
             _configuration = configuration;
+            _dbContext = dbContext;
         }
 
         //[HttpPost("login")]
@@ -33,19 +37,26 @@ namespace webapi_iot_growdata5.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] Dictionary<string, string> credentials)
         {
+
+            var user_obj = _dbContext.iounit_users
+                .Where(s => s.username == credentials["Username"])
+                .ToList();
+            //HashPassword("test123");
+
             if (credentials == null || !credentials.ContainsKey("Username") || !credentials.ContainsKey("Password"))
             {
                 return BadRequest("Invalid input. Provide 'Username' and 'Password' as JSON.");
             }
 
-            string username = credentials["Username"];
-            string password = credentials["Password"];
-
-            if (username == "admin" && password == "password")
+            if (user_obj.Count > 0)
             {
-                var token = GenerateJwtToken(username);
-                return Ok(new { token });
+                if (credentials["Username"] == user_obj[0].username && HashPassword(credentials["Password"]) == user_obj[0].pw_hash)
+                {
+                    var token = GenerateJwtToken(credentials["Username"]);
+                    return Ok(new { token });
+                }
             }
+            
 
             return Unauthorized("Invalid credentials.");
         }
@@ -72,6 +83,20 @@ namespace webapi_iot_growdata5.Controllers
                 signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                // BitConverter liefert ein Hex-String mit Bindestrichen:
+                // Daher entfernen und zu lower-case konvertieren
+                return BitConverter
+                    .ToString(hashedBytes)
+                    .Replace("-", "")
+                    .ToLowerInvariant();
+            }
         }
     }
 }

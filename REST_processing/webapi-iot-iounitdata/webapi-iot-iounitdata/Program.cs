@@ -60,17 +60,31 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
     app.UseSwaggerUI();
 }
 
+
+
 app.UseRouting();
+
+// Reihenfolge beachten:
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
 
 
-//app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
-app.UseCors("AllowAllOrigins");
-app.MapControllers();
+//app.UseRouting();
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllers();
+//});
+
+
+////app.UseHttpsRedirection();
+//app.UseAuthentication();
+//app.UseAuthorization();
+//app.UseCors("AllowAllOrigins");
+//app.MapControllers();
 
 app.Run();

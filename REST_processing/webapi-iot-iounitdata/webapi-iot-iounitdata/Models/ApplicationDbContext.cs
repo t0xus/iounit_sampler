@@ -17,6 +17,8 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<iounit_data_currently> iounit_data_currently { get; set; }
 
+    public virtual DbSet<iounit_users> iounit_users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<iounit_data_chronology>(entity =>
@@ -38,6 +40,16 @@ public partial class ApplicationDbContext : DbContext
             entity.Property(e => e.value_alphanumerical).HasMaxLength(25);
         });
         modelBuilder.HasSequence("sensor_data_chronology_id_seq");
+
+        modelBuilder.Entity<iounit_users>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("iounit_users_pkey");
+
+            entity.Property(e => e.username).HasMaxLength(25);
+            entity.Property(e => e.pw_hash).HasMaxLength(25);
+            entity.Property(e => e.last_modify).HasColumnType("timestamp without time zone");
+
+        });
 
         OnModelCreatingPartial(modelBuilder);
     }

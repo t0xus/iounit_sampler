@@ -9,9 +9,13 @@
          "Name": "public.iounit_data_chronology",
          "ObjectType": 0
       },
-      {
-         "Name": "public.iounit_data_currently",
-         "ObjectType": 0
-      }
+    {
+      "Name": "public.iounit_data_currently",
+      "ObjectType": 0
+    },
+    {
+      "Name": "public.iounit_users",
+      "ObjectType": 0
+    }
    ]
 }
