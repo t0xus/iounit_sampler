@@ -52,7 +52,11 @@ namespace webapi_iot_growdata5.Controllers
             {
                 if (credentials["Username"] == user_obj[0].username && HashPassword(credentials["Password"]) == user_obj[0].pw_hash)
                 {
-                    var token = GenerateJwtToken(credentials["Username"]);
+                    var role_obj = _dbContext.iounit_user_roles
+                        .Where(s => s.id == user_obj[0].id_ur)
+                        .ToList();
+                    
+                    var token = GenerateJwtToken(user_obj[0].username, role_obj[0].rolename);
                     return Ok(new { token });
                 }
             }
@@ -61,7 +65,7 @@ namespace webapi_iot_growdata5.Controllers
             return Unauthorized("Invalid credentials.");
         }
 
-        private string GenerateJwtToken(string username)
+        private string GenerateJwtToken(string username, string role)
         {
             var jwtSettings = _configuration.GetSection("JwtSettings");
 
@@ -69,7 +73,10 @@ namespace webapi_iot_growdata5.Controllers
             {
             new Claim(JwtRegisteredClaimNames.Sub, username),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Name, username)
+            new Claim(ClaimTypes.Name, username),
+
+            // Hier die Rolle hinzufügen:
+            new Claim(ClaimTypes.Role, role)
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));

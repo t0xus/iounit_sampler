@@ -17,7 +17,7 @@ namespace webapi_iot_growdata5.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<iounit_data_chronology>>> GetAllData()
         {
             return await _context.iounit_data_chronology.ToListAsync();

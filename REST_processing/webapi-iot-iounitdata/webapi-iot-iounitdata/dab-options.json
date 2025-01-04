@@ -16,6 +16,10 @@
     {
       "Name": "public.iounit_users",
       "ObjectType": 0
+    },
+    {
+      "Name": "public.iounit_user_roles",
+      "ObjectType": 0
     }
    ]
 }
