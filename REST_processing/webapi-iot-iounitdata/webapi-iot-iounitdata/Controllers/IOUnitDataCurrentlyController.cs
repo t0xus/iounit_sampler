@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using webapi_iot_growdata5.Models;
 
@@ -51,6 +52,35 @@ namespace webapi_iot_growdata5.Controllers
 
             // Wenn keiner der Parameter übergeben wurde, Fehler zurückgeben
             return BadRequest("Bitte einen Parameter (id oder value_numerical) angeben.");
+        }
+
+        // Neuen PUT-Endpoint zum Ändern des value_numerical hinzufügen:
+        [HttpPut("updateValue")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> UpdateValueNumericalById([FromQuery] int id, [FromQuery] decimal newValue)
+        {
+            // Datensatz anhand der ID holen
+            var record = await _context.iounit_data_currently.FindAsync(id);
+            if (record == null)
+            {
+                return NotFound($"Keine Daten für ID {id} gefunden.");
+            }
+
+            // Wert anpassen
+            record.value_numerical = newValue;
+
+            // Änderungen speichern
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                  $"Fehler beim Speichern in der Datenbank: {ex.Message}");
+            }
+
+            return Ok($"Der Wert value_numerical für ID {id} wurde erfolgreich auf {newValue} gesetzt.");
         }
 
         // Private Methode: Abruf von Daten nach ID
