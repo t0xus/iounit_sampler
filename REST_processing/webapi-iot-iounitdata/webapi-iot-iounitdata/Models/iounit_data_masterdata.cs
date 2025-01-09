@@ -5,15 +5,15 @@ using System.Collections.Generic;
 
 namespace webapi_iot_growdata5.Models;
 
-public partial class iounit_users
+public partial class iounit_data_masterdata
 {
     public int id { get; set; }
 
-    public string username { get; set; }
+    public string long_name { get; set; }
 
-    public string pw_hash { get; set; }
+    public string short_name { get; set; }
 
-    public short? id_ur { get; set; }
+    public short? id_sc { get; set; }
 
-    public DateTime? last_modify { get; set; }
+    public short? id_mu { get; set; }
 }

@@ -9,7 +9,7 @@ public partial class iounit_data_chronology
 {
     public int id { get; set; }
 
-    public DateTime datetime { get; set; }
+    public DateTime? datetime { get; set; }
 
     public decimal? value_numerical { get; set; }
 

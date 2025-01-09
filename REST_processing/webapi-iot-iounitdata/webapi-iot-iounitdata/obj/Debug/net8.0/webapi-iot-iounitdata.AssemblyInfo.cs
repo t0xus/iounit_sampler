@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webapi-iot-iounitdata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+691c9989ac4ba7f1f53694a7591f398961caa717")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+529bab8a708ec3fa1cfa893cbd323759e5678ffd")]
 [assembly: System.Reflection.AssemblyProductAttribute("webapi-iot-iounitdata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webapi-iot-iounitdata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

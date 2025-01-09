@@ -17,17 +17,18 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<iounit_data_currently> iounit_data_currently { get; set; }
 
-    public virtual DbSet<iounit_users> iounit_users { get; set; }
+    public virtual DbSet<iounit_data_masterdata> iounit_data_masterdata { get; set; }
 
     public virtual DbSet<iounit_user_roles> iounit_user_roles { get; set; }
+
+    public virtual DbSet<iounit_users> iounit_users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<iounit_data_chronology>(entity =>
         {
-            entity.HasKey(e => e.id).HasName("sensor_data_chronology_pkey");
+            entity.HasKey(e => e.id).HasName("iounit_data_chronology_pkey");
 
-            entity.Property(e => e.id).HasDefaultValueSql("nextval('sensor_data_chronology_id_seq'::regclass)");
             entity.Property(e => e.datetime).HasColumnType("timestamp without time zone");
             entity.Property(e => e.value_alphanumerical).HasMaxLength(25);
         });
@@ -41,24 +42,34 @@ public partial class ApplicationDbContext : DbContext
             entity.Property(e => e.last_processing).HasColumnType("timestamp without time zone");
             entity.Property(e => e.value_alphanumerical).HasMaxLength(25);
         });
-        modelBuilder.HasSequence("sensor_data_chronology_id_seq");
 
-        modelBuilder.Entity<iounit_users>(entity =>
+        modelBuilder.Entity<iounit_data_masterdata>(entity =>
         {
-            entity.HasKey(e => e.id).HasName("iounit_users_pkey");
+            entity.HasKey(e => e.id).HasName("iounit_data_masterdata_pkey");
 
-            entity.Property(e => e.username).HasMaxLength(25);
-            entity.Property(e => e.pw_hash).HasMaxLength(25);
-            entity.Property(e => e.last_modify).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.short_name).HasMaxLength(25);
         });
 
         modelBuilder.Entity<iounit_user_roles>(entity =>
         {
             entity.HasKey(e => e.id).HasName("iounit_user_roles_pkey");
+
             entity.Property(e => e.rolename).HasMaxLength(25);
         });
 
-            OnModelCreatingPartial(modelBuilder);
+        modelBuilder.Entity<iounit_users>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("iounit_users_pkey");
+
+            entity.Property(e => e.last_modify).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.pw_hash)
+                .HasMaxLength(80)
+                .HasDefaultValueSql("NULL::character varying");
+            entity.Property(e => e.username).HasMaxLength(25);
+        });
+
+        OnModelCreatingPartial(modelBuilder);
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
