@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>JSON in Tabelle darstellen</title>
+    <style>
+        table, th, td {
+            border: 1px solid #444;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JSON in Tabelle</h2>
+<button id="fetchBtn">Daten laden</button>
+
+<table id="dataTable">
+    <!-- Die Tabelle wird dynamisch per JavaScript befüllt -->
+</table>
+
+<script>
+document.getElementById("fetchBtn").addEventListener("click", loadData);
+
+function loadData() {
+    // Beispiel-URL mit JSON-Antwort:
+    const url = "http://localhost:5226/api/IOUnitDataCurrently"; 
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not OK: " + response.status);
+            }
+            return response.json();
+        })
+        .then(jsonData => {
+            // Erstelle die Tabelle
+            createTableFromJson(jsonData);
+        })
+        .catch(error => {
+            console.error("Fehler beim Laden:", error);
+        });
+}
+
+function createTableFromJson(data) {
+    // data sollte ein Array von Objekten sein
+    // 1. Tabelle leeren
+    const table = document.getElementById("dataTable");
+    table.innerHTML = "";
+
+    if (!Array.isArray(data) || data.length === 0) {
+        table.innerHTML = "<tr><td>Keine Daten vorhanden oder falsches Format</td></tr>";
+        return;
+    }
+
+    // 2. Spalten-Header generieren (Basierend auf den Keys des ersten Objekts)
+    const headerRow = document.createElement("tr");
+    const firstObj = data[0];
+    const keys = Object.keys(firstObj);
+
+    keys.forEach(key => {
+        const th = document.createElement("th");
+        th.textContent = key;
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // 3. Datenzeilen einfügen
+    data.forEach(item => {
+        const row = document.createElement("tr");
+        keys.forEach(key => {
+            const td = document.createElement("td");
+            td.textContent = item[key];
+            row.appendChild(td);
+        });
+        table.appendChild(row);
+    });
+}
+</script>
+
+</body>
+</html>

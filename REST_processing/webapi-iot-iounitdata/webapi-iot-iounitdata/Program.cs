@@ -60,7 +60,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
     app.UseSwaggerUI();
 }
 
-
+app.UseCors("AllowAllOrigins");
 
 app.UseRouting();
 

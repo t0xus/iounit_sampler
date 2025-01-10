@@ -13,11 +13,17 @@ public partial class ApplicationDbContext : DbContext
     {
     }
 
+    public virtual DbSet<iounit_configuration> iounit_configuration { get; set; }
+
     public virtual DbSet<iounit_data_chronology> iounit_data_chronology { get; set; }
 
     public virtual DbSet<iounit_data_currently> iounit_data_currently { get; set; }
 
     public virtual DbSet<iounit_data_masterdata> iounit_data_masterdata { get; set; }
+
+    public virtual DbSet<iounit_measuring_units> iounit_measuring_units { get; set; }
+
+    public virtual DbSet<iounit_type> iounit_type { get; set; }
 
     public virtual DbSet<iounit_user_roles> iounit_user_roles { get; set; }
 
@@ -25,6 +31,14 @@ public partial class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<iounit_configuration>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("iounit_configuration_pkey");
+
+            entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.short_name).HasMaxLength(25);
+        });
+
         modelBuilder.Entity<iounit_data_chronology>(entity =>
         {
             entity.HasKey(e => e.id).HasName("iounit_data_chronology_pkey");
@@ -48,6 +62,23 @@ public partial class ApplicationDbContext : DbContext
             entity.HasKey(e => e.id).HasName("iounit_data_masterdata_pkey");
 
             entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.short_name).HasMaxLength(25);
+        });
+
+        modelBuilder.Entity<iounit_measuring_units>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("iounit_measuring_units_pkey");
+
+            entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.short_name).HasMaxLength(25);
+        });
+
+        modelBuilder.Entity<iounit_type>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("iounit_type_pkey");
+
+            entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.py_drv_path).HasMaxLength(100);
             entity.Property(e => e.short_name).HasMaxLength(25);
         });
 

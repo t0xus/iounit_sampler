@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_data_masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_data_masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\controllers\\iounitauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\controllers\\iounitauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\controllers\\iounitdatacurrentlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\controllers\\iounitdatacurrentlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,24 +11,44 @@
       "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\controllers\\iounitdatachronologycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\dab-options.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounitauthenticationloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounitauthenticationloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_data_currently.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_data_currently.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_data_masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_data_masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_data_chronology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_data_chronology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounit_data_currently.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounit_data_currently.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\controllers\\iounitauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\controllers\\iounitauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\dab-options.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\models\\iounitauthenticationloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|solutionrelative:webapi-iot-iounitdata\\models\\iounitauthenticationloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{497200B3-C34F-4424-A022-D34CA4CDC9D0}|webapi-iot-iounitdata\\webapi-iot-iounitdata.csproj|c:\\users\\t0xus\\source\\repos\\iounit_sampler\\rest_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,45 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "iounit_data_masterdata.cs",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
-              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T15:25:03.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IOUnitDataChronologyController.cs",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
-              "RelativeToolTip": "webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:18:29.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dab-options.json",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\dab-options.json",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json",
-              "RelativeToolTip": "webapi-iot-iounitdata\\dab-options.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T10:12:03.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "IOUnitAuthenticationLoginModel.cs",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\IOUnitAuthenticationLoginModel.cs",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\IOUnitAuthenticationLoginModel.cs",
@@ -132,32 +98,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\ApplicationDbContext.cs",
               "RelativeToolTip": "webapi-iot-iounitdata\\Models\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T13:32:52.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "IOUnitDataCurrentlyController.cs",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataCurrentlyController.cs",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Controllers\\IOUnitDataCurrentlyController.cs",
               "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataCurrentlyController.cs",
               "RelativeToolTip": "webapi-iot-iounitdata\\Controllers\\IOUnitDataCurrentlyController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAwwDoAAAAkAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABkAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:36:31.479Z"
+              "WhenOpened": "2025-01-07T11:36:31.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "iounit_data_currently.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T11:36:27.101Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IOUnitDataChronologyController.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Controllers\\IOUnitDataChronologyController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T17:18:29.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Program.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Program.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Program.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAYwD4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T13:19:44.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "iounit_data_masterdata.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_masterdata.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:25:03.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "iounit_users.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_users.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_users.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_users.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:49:19.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "iounit_data_chronology.cs",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
+              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T10:01:53.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dab-options.json",
+              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json",
+              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\dab-options.json",
+              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-options.json",
+              "RelativeToolTip": "webapi-iot-iounitdata\\dab-options.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T10:12:03.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "IOUnitAuthentication.cs",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Controllers\\IOUnitAuthentication.cs",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Controllers\\IOUnitAuthentication.cs",
@@ -165,12 +218,11 @@
               "RelativeToolTip": "webapi-iot-iounitdata\\Controllers\\IOUnitAuthentication.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAmwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:30:33.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T13:30:33.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "efpt.config.json",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\efpt.config.json",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\efpt.config.json",
@@ -183,43 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "iounit_data_currently.cs",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
-              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_currently.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:36:27.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Program.cs",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Program.cs",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Program.cs",
-              "RelativeToolTip": "webapi-iot-iounitdata\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAYwFoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:19:44.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "iounit_data_chronology.cs",
-              "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
-              "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
-              "ToolTip": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
-              "RelativeToolTip": "webapi-iot-iounitdata\\Models\\iounit_data_chronology.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T10:01:53.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\appsettings.Development.json",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\appsettings.Development.json",
@@ -231,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\appsettings.json",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\appsettings.json",
@@ -243,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CustomLoginModelBinder.cs",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Models\\CustomLoginModelBinder.cs",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Models\\CustomLoginModelBinder.cs",
@@ -255,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "dab-config.cmd",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\dab-config.cmd",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\dab-config.cmd",
@@ -267,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\t0xus\\source\\repos\\iounit_sampler\\REST_processing\\webapi-iot-iounitdata\\webapi-iot-iounitdata\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "webapi-iot-iounitdata\\Properties\\launchSettings.json",
