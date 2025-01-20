@@ -8,7 +8,7 @@ import time
 
 from jinja2 import Template
 
-from sensor_type_drvs.DHT22 import DHT22
+from sensor_type_drvs.DHT22 import DHT22_222
 
 
 
@@ -16,12 +16,33 @@ from sensor_type_drvs.DHT22 import DHT22
 if __name__ == "__main__":
     id_queue = Queue()
     return_queue = Queue()
-    board_pin = Queue()
+    
+    #Neuer Code
+    
+    with open("sensor_type_drvs/DHT22.j2", "r") as tpl_file:
+        template_str = tpl_file.read()
+
+    # 2. Template parsen
+    template = Template(template_str)
+
+    # 3. Platzhalter füllen
+    rendered_content = template.render(
+        id_sc="222",
+        pin_id="D4"
+    )
+
+    # 4. In eine neue .py-Datei schreiben
+    with open("sensor_type_drvs/DHT22.py", "w") as out_file:
+        out_file.write(rendered_content)
+
+    print(" wurde erstellt.")
+    
+    ########## Neuer Code Ende
     
     #Hier muss noch ein Listendatentyp hin
-    process1 = Process(target=DHT22, args=(id_queue, return_queue, board_pin))
+    process1 = Process(target=DHT22_222, args=(id_queue, return_queue))
     process1.start()
-    
+
 
     db_config = {
         'dbname': 'postgres',
@@ -65,38 +86,10 @@ if __name__ == "__main__":
             conn.commit()
             cursor_update_b.close()
             
-            cursor_read2 = conn.cursor()
-            # SQL SELECT Befehl
-            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = " + str(temp_id_sdm)
-        
-            cursor_read2.execute(select_query)
-            records2 = cursor_read2.fetchall()
-            board_pin_enum = None
-            for row2 in records2:
             
-            
-                #Auflösen der PIN Datenbankeinträge
-                if row2[0] == "x":
-                    board_pin_enum = board.D1
-                elif row2[1] == "x": 
-                    board_pin_enum = board.D2
-                elif row2[2] == "x": 
-                    board_pin_enum = board.D3
-                elif row2[3] == "x":
-                    board_pin_enum = board.D4
-                elif row2[4] == "x":
-                    board_pin_enum = board.D5
-                elif row2[5] == "x":
-                    board_pin_enum = board.D6
-                elif row2[6] == "x":
-                    board_pin_enum = board.D7
-                elif row2[7] == "x":
-                    board_pin_enum = board.D8
-                    
-            cursor_read2.close
+            #result = 3000
             
             #Kommunikation mit dem IO Thread
-            board_pin.put(board_pin_enum)
             id_queue.put(temp_id_sdm)
             
             while return_queue.qsize() == 0:

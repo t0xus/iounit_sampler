@@ -6,9 +6,43 @@ from psycopg2 import sql
 from multiprocessing import Process, Queue
 import time
 
-from jinja2 import Template
+#def DHT22_1(id_queue1, value_queue, return_queue):
+def DHT22_1(id_queue, return_queue):
+    while True:
+        message = id_queue.get()
+        if message == 0:
+            break
+        
+        result = 0
+        
+        dhtDevice = adafruit_dht.DHT22(board.D4, use_pulseio=False)
+        
+        cal_run = True
+        while cal_run:
+            try:
+                #if message == <iounit_data_masterdata.id>
+                if message == 1:
+                    result = dhtDevice.temperature
+                    cal_run = False
+                elif message == 2: 
+                    result = dhtDevice.humidity
+                    cal_run = False
+            except RuntimeError as error:
+                # Errors happen fairly often, DHT's are hard to read, just keep going
+                print(error.args[0])
+                time.sleep(2)
+                continue
+            except Exception as error:
+                dhtDevice.exit()
+                raise error
 
-from sensor_type_drvs.DHT22 import DHT22
+            time.sleep(2)
+        
+        
+        
+        return_queue.put(result)
+        time.sleep(1)
+
 
 
 
@@ -16,12 +50,11 @@ from sensor_type_drvs.DHT22 import DHT22
 if __name__ == "__main__":
     id_queue = Queue()
     return_queue = Queue()
-    board_pin = Queue()
-    
+
     #Hier muss noch ein Listendatentyp hin
-    process1 = Process(target=DHT22, args=(id_queue, return_queue, board_pin))
+    process1 = Process(target=DHT22_1, args=(id_queue, return_queue))
     process1.start()
-    
+
 
     db_config = {
         'dbname': 'postgres',
@@ -65,38 +98,10 @@ if __name__ == "__main__":
             conn.commit()
             cursor_update_b.close()
             
-            cursor_read2 = conn.cursor()
-            # SQL SELECT Befehl
-            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = " + str(temp_id_sdm)
-        
-            cursor_read2.execute(select_query)
-            records2 = cursor_read2.fetchall()
-            board_pin_enum = None
-            for row2 in records2:
             
-            
-                #Auflösen der PIN Datenbankeinträge
-                if row2[0] == "x":
-                    board_pin_enum = board.D1
-                elif row2[1] == "x": 
-                    board_pin_enum = board.D2
-                elif row2[2] == "x": 
-                    board_pin_enum = board.D3
-                elif row2[3] == "x":
-                    board_pin_enum = board.D4
-                elif row2[4] == "x":
-                    board_pin_enum = board.D5
-                elif row2[5] == "x":
-                    board_pin_enum = board.D6
-                elif row2[6] == "x":
-                    board_pin_enum = board.D7
-                elif row2[7] == "x":
-                    board_pin_enum = board.D8
-                    
-            cursor_read2.close
+            #result = 3000
             
             #Kommunikation mit dem IO Thread
-            board_pin.put(board_pin_enum)
             id_queue.put(temp_id_sdm)
             
             while return_queue.qsize() == 0:
@@ -153,3 +158,4 @@ if __name__ == "__main__":
     process1.terminate()
     
     conn.close()
+

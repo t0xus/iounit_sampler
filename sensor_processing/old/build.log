@@ -1,0 +1,101 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 708B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python:3.11-slim@sha256:ad5dadd957a398226996bc4846e522c39f2a77340b531b28aaab85b2d361210b
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 77B done
+#5 DONE 0.1s
+
+#6 [2/6] WORKDIR /app
+#6 CACHED
+
+#7 [3/6] RUN apt-get update && apt-get install -y gcc build-essential
+#7 CACHED
+
+#8 [4/6] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 6.072 Collecting adafruit-circuitpython-dht (from -r requirements.txt (line 1))
+#9 6.249   Downloading adafruit_circuitpython_dht-4.0.4-py3-none-any.whl.metadata (5.7 kB)
+#9 6.493 Collecting psycopg2 (from -r requirements.txt (line 2))
+#9 6.519   Downloading psycopg2-2.9.9.tar.gz (384 kB)
+#9 6.633      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 384.9/384.9 kB 3.7 MB/s eta 0:00:00
+#9 6.807   Preparing metadata (setup.py): started
+#9 8.670   Preparing metadata (setup.py): finished with status 'error'
+#9 8.688   error: subprocess-exited-with-error
+#9 8.688   
+#9 8.688   × python setup.py egg_info did not run successfully.
+#9 8.688   │ exit code: 1
+#9 8.688   ╰─> [23 lines of output]
+#9 8.688       running egg_info
+#9 8.688       creating /tmp/pip-pip-egg-info-d7xaviy3/psycopg2.egg-info
+#9 8.688       writing /tmp/pip-pip-egg-info-d7xaviy3/psycopg2.egg-info/PKG-INFO
+#9 8.688       writing dependency_links to /tmp/pip-pip-egg-info-d7xaviy3/psycopg2.egg-info/dependency_links.txt
+#9 8.688       writing top-level names to /tmp/pip-pip-egg-info-d7xaviy3/psycopg2.egg-info/top_level.txt
+#9 8.688       writing manifest file '/tmp/pip-pip-egg-info-d7xaviy3/psycopg2.egg-info/SOURCES.txt'
+#9 8.688       
+#9 8.688       Error: pg_config executable not found.
+#9 8.688       
+#9 8.688       pg_config is required to build psycopg2 from source.  Please add the directory
+#9 8.688       containing pg_config to the $PATH or specify the full executable path with the
+#9 8.688       option:
+#9 8.688       
+#9 8.688           python setup.py build_ext --pg-config /path/to/pg_config build ...
+#9 8.688       
+#9 8.688       or with the pg_config option in 'setup.cfg'.
+#9 8.688       
+#9 8.688       If you prefer to avoid building psycopg2 from source, please install the PyPI
+#9 8.688       'psycopg2-binary' package instead.
+#9 8.688       
+#9 8.688       For further information please check the 'doc/src/install.rst' file (also at
+#9 8.688       <https://www.psycopg.org/docs/install.html>).
+#9 8.688       
+#9 8.688       [end of output]
+#9 8.688   
+#9 8.688   note: This error originates from a subprocess, and is likely not a problem with pip.
+#9 8.695 error: metadata-generation-failed
+#9 8.695 
+#9 8.695 × Encountered error while generating package metadata.
+#9 8.695 ╰─> See above for output.
+#9 8.695 
+#9 8.695 note: This is an issue with the package mentioned above, not pip.
+#9 8.695 hint: See above for details.
+#9 9.099 
+#9 9.099 [notice] A new release of pip is available: 24.0 -> 24.2
+#9 9.099 [notice] To update, run: pip install --upgrade pip
+#9 ERROR: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+------
+ > [5/6] RUN pip install --no-cache-dir -r requirements.txt:
+8.695 error: metadata-generation-failed
+8.695 
+8.695 × Encountered error while generating package metadata.
+8.695 ╰─> See above for output.
+8.695 
+8.695 note: This is an issue with the package mentioned above, not pip.
+8.695 hint: See above for details.
+9.099 
+9.099 [notice] A new release of pip is available: 24.0 -> 24.2
+9.099 [notice] To update, run: pip install --upgrade pip
+------
+Dockerfile:12
+--------------------
+  10 |     # Kopiere die requirements.txt und installiere die Python-Pakete
+  11 |     COPY requirements.txt .
+  12 | >>> RUN pip install --no-cache-dir -r requirements.txt
+  13 |     #RUN pip install --no-cache-dir adafruit-circuitpython-dht
+  14 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
