@@ -67,9 +67,9 @@ if __name__ == "__main__":
             
             cursor_read2 = conn.cursor()
             # SQL SELECT Befehl
-            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = {temp_id_sdm}"
+            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = " + str(temp_id_sdm)
         
-            cursor_read2.execute(select_query.format(temp_id_sdm = temp_id_sdm))
+            cursor_read2.execute(select_query)
             records2 = cursor_read2.fetchall()
             board_pin_enum = None
             for row2 in records2:
@@ -97,7 +97,7 @@ if __name__ == "__main__":
             
             #Kommunikation mit dem IO Thread
             board_pin.put(board_pin_enum)
-            id_queue.put(1)
+            id_queue.put(temp_id_sdm)
             
             while return_queue.qsize() == 0:
                 time.sleep(0.1)
