@@ -23,6 +23,33 @@ namespace webapi_iot_growdata5.Controllers
             return await _context.iounit_data_currently.ToListAsync();
         }
 
+        // GET: api/IOUnitDataCurrently/retrieve_data
+        [HttpGet("retrieve_data")]
+        public async Task<ActionResult<IEnumerable<iounit_data_currently>>> RetrieveDataById([FromQuery] int? id)
+        {
+            if (!id.HasValue)
+            {
+                return BadRequest("Bitte eine ID angeben.");
+            }
+
+            // Den passenden Datensatz anhand der ID holen
+            var result = await _context.iounit_data_currently.FindAsync(id.Value);
+            
+            if (result == null)
+            {
+                return NotFound($"Kein Eintrag mit id_sdm={id.Value} gefunden.");
+            }
+
+            // direction_stamp_a auf das aktuelle Datum/Zeit setzen
+            result.direction_stamp_a = DateTime.Now;
+
+            // Änderungen an der DB speichern
+            await _context.SaveChangesAsync();
+
+            // Die gesamte Entität zurückgeben (bzw. nur item.value_numerical, falls gewünscht)
+            return new List<iounit_data_currently> { result }; ;
+        }
+
         // GET: api/IOUnitDataCurrently/specific
         [HttpGet("specific")]
         public async Task<ActionResult<iounit_data_currently>> GetData(

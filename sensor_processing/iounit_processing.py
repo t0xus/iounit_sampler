@@ -41,8 +41,14 @@ if __name__ == "__main__":
         
         cursor_read = conn.cursor()
         # SQL SELECT Befehl
-        select_query = "SELECT id_sdm, value_numerical, value_alphanumerical FROM iounit_data_currently WHERE direction_stamp_a IS NOT NULL ORDER BY direction_stamp_a ASC LIMIT 1"
-        
+        select_query = sql.SQL("""SELECT id_sdm, id_mu, id_sc, value_numerical, value_alphanumerical
+            FROM iounit_data_currently
+            INNER JOIN
+            iounit_data_masterdata ON iounit_data_masterdata.id = iounit_data_currently.id_sdm
+            WHERE direction_stamp_a IS NOT NULL
+            ORDER BY direction_stamp_a ASC
+            LIMIT 1
+            """)
         cursor_read.execute(select_query)
         records = cursor_read.fetchall()
 
@@ -51,12 +57,10 @@ if __name__ == "__main__":
         
         for row in records:
             temp_id_sdm = row[0]
-            #if row.count() != 0:
-            #temp_id_sdm = None
+            temp_id_mu = row[1]
+            temp_id_sc = row[2]
             
-            #for row in records:
-            #temp_id_sdm = row.id_sdm
-            print("Hallo2")
+            print(temp_id_sdm)
             
             #Bestätige der API, das die Anfrage zu diesem Zeitpunkt registriert wurde
             update_query_b = "UPDATE iounit_data_currently set direction_stamp_b = CURRENT_TIMESTAMP WHERE id_sdm = {temp_id_sdm}"
@@ -67,9 +71,9 @@ if __name__ == "__main__":
             
             cursor_read2 = conn.cursor()
             # SQL SELECT Befehl
-            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = {temp_id_sdm}"
+            select_query = "SELECT d1, d2, d3, d4, d5, d6, d7, d8 from iounit_configuration WHERE id = {temp_id_sc}"
         
-            cursor_read2.execute(select_query.format(temp_id_sdm = temp_id_sdm))
+            cursor_read2.execute(select_query.format(temp_id_sc = temp_id_sc))
             records2 = cursor_read2.fetchall()
             board_pin_enum = None
             for row2 in records2:
@@ -97,7 +101,7 @@ if __name__ == "__main__":
             
             #Kommunikation mit dem IO Thread
             board_pin.put(board_pin_enum)
-            id_queue.put(1)
+            id_queue.put(temp_id_mu)
             
             while return_queue.qsize() == 0:
                 time.sleep(0.1)
@@ -107,22 +111,22 @@ if __name__ == "__main__":
             #Eintrag in die Laufdatentabelle iounit_data_chronology
             cursor_insert = conn.cursor()
             insert_query = sql.SQL("""
-                INSERT INTO iounit_data_chronology (datetime, value_numeric, value_alphanumeric, id_mu, id_sc)
+                INSERT INTO iounit_data_chronology (datetime, value_numeric, value_alphanumeric, id_mu, id_sdm)
                 VALUES (CURRENT_TIMESTAMP, %s, %s, %s, %s)
             """)
             
             data = {
                 'value_numeric': result,
                 'value_alphanumeric': None,
-                'id_mu': None,
-                'id_sc': 1
+                'id_mu': temp_id_mu,
+                'id_sdm': temp_id_sdm
             }
             
             cursor_insert.execute(insert_query, (
                 data['value_numeric'],
                 data['value_alphanumeric'],
                 data['id_mu'],
-                data['id_sc']
+                data['id_sdm']
             ))
 
             conn.commit()
