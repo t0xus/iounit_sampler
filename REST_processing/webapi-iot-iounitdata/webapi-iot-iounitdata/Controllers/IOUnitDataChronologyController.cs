@@ -69,7 +69,31 @@ namespace webapi_iot_growdata5.Controllers
             return BadRequest("Bitte einen Parameter (id oder value_numerical) angeben.");
         }
 
+        [HttpPost("adddata")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> AddData([FromQuery] decimal value_numerical, [FromQuery] int id_mu, [FromQuery] int id_sdm)
+        {
+            var newRecord = new iounit_data_chronology
+            {
+                datetime = DateTime.Now,
+                value_numeric = value_numerical,
+                id_mu = (short)id_mu,
+                id_sdm = (short)id_sdm
+            };
 
+            _context.iounit_data_chronology.Add(newRecord);
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return Ok(new { Message = "Daten erfolgreich hinzugefügt.", Record = newRecord });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                  $"Fehler beim Speichern in der Datenbank: {ex.Message}");
+            }
+        }
 
 
         private async Task<ActionResult<IEnumerable<iounit_data_chronology>>> GetDataById(int id)
@@ -90,7 +114,7 @@ namespace webapi_iot_growdata5.Controllers
         private async Task<ActionResult<IEnumerable<iounit_data_chronology>>> GetDataByValueNumerical(decimal value_numerical)
         {
             var ret_data = await _context.iounit_data_chronology
-                .Where(s => s.value_numerical == value_numerical)
+                .Where(s => s.value_numeric == value_numerical)
                 .ToListAsync();
 
             if (ret_data == null)

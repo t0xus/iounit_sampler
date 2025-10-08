@@ -21,13 +21,13 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<iounit_data_masterdata> iounit_data_masterdata { get; set; }
 
-    public virtual DbSet<iounit_measuring_units> iounit_measuring_units { get; set; }
-
     public virtual DbSet<iounit_type> iounit_type { get; set; }
 
     public virtual DbSet<iounit_user_roles> iounit_user_roles { get; set; }
 
     public virtual DbSet<iounit_users> iounit_users { get; set; }
+
+    public virtual DbSet<measuring_units> measuring_units { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -35,16 +35,25 @@ public partial class ApplicationDbContext : DbContext
         {
             entity.HasKey(e => e.id).HasName("iounit_configuration_pkey");
 
+            entity.Property(e => e.d1).HasMaxLength(1);
+            entity.Property(e => e.d2).HasMaxLength(1);
+            entity.Property(e => e.d3).HasMaxLength(1);
+            entity.Property(e => e.d4).HasMaxLength(1);
+            entity.Property(e => e.d5).HasMaxLength(1);
+            entity.Property(e => e.d6).HasMaxLength(1);
+            entity.Property(e => e.d7).HasMaxLength(1);
+            entity.Property(e => e.d8).HasMaxLength(1);
             entity.Property(e => e.long_name).HasMaxLength(40);
             entity.Property(e => e.short_name).HasMaxLength(25);
         });
 
         modelBuilder.Entity<iounit_data_chronology>(entity =>
         {
-            entity.HasKey(e => e.id).HasName("iounit_data_chronology_pkey");
+            entity.HasKey(e => e.id).HasName("sensor_data_chronology_pkey");
 
+            entity.Property(e => e.id).HasDefaultValueSql("nextval('sensor_data_chronology_id_seq'::regclass)");
             entity.Property(e => e.datetime).HasColumnType("timestamp without time zone");
-            entity.Property(e => e.value_alphanumerical).HasMaxLength(25);
+            entity.Property(e => e.value_alphanumeric).HasMaxLength(25);
         });
 
         modelBuilder.Entity<iounit_data_currently>(entity =>
@@ -60,14 +69,6 @@ public partial class ApplicationDbContext : DbContext
         modelBuilder.Entity<iounit_data_masterdata>(entity =>
         {
             entity.HasKey(e => e.id).HasName("iounit_data_masterdata_pkey");
-
-            entity.Property(e => e.long_name).HasMaxLength(40);
-            entity.Property(e => e.short_name).HasMaxLength(25);
-        });
-
-        modelBuilder.Entity<iounit_measuring_units>(entity =>
-        {
-            entity.HasKey(e => e.id).HasName("iounit_measuring_units_pkey");
 
             entity.Property(e => e.long_name).HasMaxLength(40);
             entity.Property(e => e.short_name).HasMaxLength(25);
@@ -95,10 +96,19 @@ public partial class ApplicationDbContext : DbContext
 
             entity.Property(e => e.last_modify).HasColumnType("timestamp without time zone");
             entity.Property(e => e.pw_hash)
-                .HasMaxLength(80)
+                .HasMaxLength(255)
                 .HasDefaultValueSql("NULL::character varying");
             entity.Property(e => e.username).HasMaxLength(25);
         });
+
+        modelBuilder.Entity<measuring_units>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("measuring_units_pkey");
+
+            entity.Property(e => e.long_name).HasMaxLength(40);
+            entity.Property(e => e.short_name).HasMaxLength(25);
+        });
+        modelBuilder.HasSequence("sensor_data_chronology_id_seq");
 
         OnModelCreatingPartial(modelBuilder);
     }

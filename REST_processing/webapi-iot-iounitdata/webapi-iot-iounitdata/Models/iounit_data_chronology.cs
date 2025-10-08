@@ -9,11 +9,11 @@ public partial class iounit_data_chronology
 {
     public int id { get; set; }
 
-    public DateTime? datetime { get; set; }
+    public DateTime datetime { get; set; }
 
-    public decimal? value_numerical { get; set; }
+    public decimal? value_numeric { get; set; }
 
-    public string value_alphanumerical { get; set; }
+    public string value_alphanumeric { get; set; }
 
     public short? id_mu { get; set; }
 

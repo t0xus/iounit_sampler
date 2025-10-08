@@ -16,4 +16,20 @@ public partial class iounit_configuration
     public short? id_st { get; set; }
 
     public short? id_sdm { get; set; }
+
+    public string d1 { get; set; }
+
+    public string d2 { get; set; }
+
+    public string d3 { get; set; }
+
+    public string d4 { get; set; }
+
+    public string d5 { get; set; }
+
+    public string d6 { get; set; }
+
+    public string d7 { get; set; }
+
+    public string d8 { get; set; }
 }

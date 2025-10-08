@@ -31,10 +31,6 @@
          "ObjectType": 0
       },
       {
-         "Name": "public.iounit_measuring_units",
-         "ObjectType": 0
-      },
-      {
          "Name": "public.iounit_type",
          "ObjectType": 0
       },
@@ -44,6 +40,10 @@
       },
       {
          "Name": "public.iounit_users",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.measuring_units",
          "ObjectType": 0
       }
    ],

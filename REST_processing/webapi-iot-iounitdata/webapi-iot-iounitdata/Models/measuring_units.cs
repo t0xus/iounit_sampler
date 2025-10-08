@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace webapi_iot_growdata5.Models;
 
-public partial class iounit_measuring_units
+public partial class measuring_units
 {
     public int id { get; set; }
 
